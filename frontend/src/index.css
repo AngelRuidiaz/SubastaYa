@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-crema-50 text-tinta-900 font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading text-tinta-900;
+}
+
+:focus-visible {
+  outline: 2px solid theme('colors.brasa.600');
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: theme('colors.brasa.200');
+}
+
+/* Scrollbar calida (progresivo: navegadores WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.crema.100');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.brasa.300');
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.brasa.400');
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
