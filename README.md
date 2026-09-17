@@ -23,6 +23,7 @@ cd backendSimple
 ### Terminal 1 — Base de datos (Postgres en Docker)
 
 ```bash
+abrir docker desktop
 cd docker
 docker compose up -d
 ```
