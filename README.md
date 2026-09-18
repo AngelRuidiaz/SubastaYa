@@ -1,7 +1,5 @@
 # SubastaYa
 
-> Nota: los nombres de carpetas dentro de `SubastaYa.Api` están en español (`Controladores`, `Modelos`, `Servicios`, `Datos`) porque así ya estaba escrito el proyecto y los namespaces de todas las clases dependen de esos nombres. Renombrarlas a inglés (`Controllers`, `Models`, etc.) implicaría tocar el namespace de cada archivo del proyecto sin ningún beneficio funcional, así que se conservaron tal cual para no arriesgar romper la compilación.
-
 ## Requisitos
 
 - [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
